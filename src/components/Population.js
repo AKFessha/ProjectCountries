@@ -10,19 +10,18 @@ class Population extends React.Component {
     for (let i = 0; i < distinctPopulation.length; i++) {
       totalPopulation += distinctPopulation[i];
     }
-    return totalPopulation
+    return totalPopulation;
   }
   getInputPoublation() {
-    var populationFilter = this.props.filterStatisticsList.filter(
-      list => list.country.includes(this.state.inputBoxPopu.value)).map(
-      country => country.population
-      );
+    var populationFilter = this.props.filterStatisticsList
+      .filter(list => list.country.includes(this.state.inputBoxPopu.value))
+      .map(country => country.population);
     var distinctPopulation = Array.from(new Set(populationFilter));
     var totalPopulation = 0;
     for (let i = 0; i < distinctPopulation.length; i++) {
       totalPopulation += distinctPopulation[i];
     }
-    return totalPopulation
+    return totalPopulation;
     //until here for population companents
   }
 
