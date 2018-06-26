@@ -22,7 +22,6 @@ class Population extends React.Component {
       totalPopulation += distinctPopulation[i];
     }
     return totalPopulation;
-    //until here for population companents
   }
 
   render() {
